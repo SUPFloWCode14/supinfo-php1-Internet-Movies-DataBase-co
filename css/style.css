@@ -1,0 +1,647 @@
+html,
+body {
+  background: #e9eef5;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* a:hover {
+  color: #ff9b54;
+}
+
+header {
+  background: #0a2342;
+  color: #e9eef5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: #ff6a00 15px solid;
+}
+
+.header-titre {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.header-icones {
+  display: flex;
+}
+
+.header-icone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 100px;
+}
+
+.header-icone :not(.connexion-user) {
+  min-width: 100px;
+}
+
+.header-liens {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  align-self: center;
+  align-items: center;
+  font-size: x-large;
+  padding: 0 10%;
+  font-weight: bold;
+}
+
+.header-liens li {
+  min-width: 150px;
+  text-align: center;
+}
+
+.header-cat {
+  text-decoration: none;
+  color: #e9eef5;
+}
+
+.header-logo-site {
+  text-decoration: none;
+  color: unset;
+  font-size: 2em;
+  font-weight: bold;
+  align-self: center;
+}
+
+.connexion-user {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  border: white 2px solid;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 0 6px #ff6a00;
+  box-shadow: 0 0 12px #ff9b54;
+}
+
+.header-deconnexion {
+  margin: 0;
+}
+
+.header-deconnexion button {
+  background: none;
+  border: 0;
+  color: #ff9b54;
+  font: inherit;
+  cursor: pointer;
+}
+
+.header-deconnexion button:hover {
+  transform: scale(1.1);
+}
+
+main {
+  flex-grow: 1;
+  text-align: center;
+}
+
+footer {
+  background: #0a2342;
+  color: #e9eef5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-top: #ff6a00 15px solid;
+}
+
+footer nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #e9eef5;
+}
+
+footer > nav > a {
+  place-self: center center;
+}
+
+.index-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+
+.index-hero {
+  grid-column: 1/6;
+  text-align: center;
+}
+
+.carte-film {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #ccc;
+  border: 1px solid black;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 15px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.carte-film img {
+  max-width: 100%;
+}
+
+.carte-film div,
+.carte-film form {
+  text-align: center;
+  padding: 5px 0;
+}
+
+.film-section {
+  display: flex;
+  flex-direction: column;
+  place-self: center center;
+  align-items: center;
+  text-align: justify;
+
+  background-color: #ccc;
+  border: 1px solid black;
+  width: 80%;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 3%;
+}
+
+.film-details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.film-details > h1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  text-align: center;
+}
+
+.film-details div {
+  padding: 10px;
+}
+
+.film-prix-panier {
+  text-align: center;
+}
+
+.film-div + .film-div {
+  border-left: 2px solid #0a2342;
+  padding-left: 24px;
+}
+
+.panier-ajout {
+  justify-items: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-section {
+  width: 100%;
+}
+
+.zone-recherche {
+  gap: 20px;
+  display: flex;
+  justify-self: center;
+}
+
+.index-films,
+.search-resultats,
+.genre-films,
+.real-films {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  margin: 10px;
+}
+
+.espace-client-menu {
+  display: inherit;
+  flex-direction: inherit;
+  align-items: center;
+  background-color: #ccc;
+  border: 1px solid black;
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0;
+  padding: 15px;
+}
+
+.espace-client-liens {
+  text-align: center;
+  text-decoration: none;
+  border: #0a2342 2px solid;
+  border-radius: 50px;
+  background: transparent;
+  color: #0a2342;
+  padding: 10px;
+  margin: 20px 0;
+  font-weight: bold;
+  width: 180px;
+}
+
+.espace-client-liens:hover {
+  color: #0a2342;
+  background: #ff6a00;
+}
+
+.panier-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center center;
+  background-color: #ccc;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 3%;
+  gap: 20px;
+}
+
+.connexion-main,
+.mon-compte-section,
+.mes-achats-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  place-content: center center;
+  background-color: #ccc;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 3%;
+  gap: 20px;
+}
+
+.connexion-main > form,
+.mon-compte-main > form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.connexion-form-input {
+  display: flex;
+  flex-direction: column;
+  place-items: center center;
+  width: 100%;
+}
+
+.mon-compte-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mes-achats-section {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-items: center;
+}
+
+.mon-compte-panneau + .mon-compte-panneau {
+  border-left: 2px solid #0a2342;
+  padding-left: 24px;
+}
+
+.mon-compte-panneau {
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* ------- Source : https://www.instagram.com/reel/Df2b4_WxTA9/?utm_source=ig_web_copy_link&evlk=MzRlODBiNWFlZA==&avpt=MzRlODBiNWFlZA== -------- */
+
+.connexion-form-input {
+  position: relative;
+  background: #e2e2e9;
+  border-radius: 4px 4px 0 0;
+  box-shadow: inset 0 -1px 0 #44474e;
+  height: 52px;
+}
+
+.connexion-form-input input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 20px 16px 6px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #0a2342;
+  font: inherit;
+}
+
+.connexion-form-input label {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  color: #0a2342;
+  font-size: 16px;
+  pointer-events: none;
+  transition:
+    transform 0.2s,
+    font-size 0.2s,
+    color 0.2s;
+}
+
+.connexion-form-input:focus-within label,
+.connexion-form-input:has(input:not(:placeholder-shown)) label {
+  transform: translateY(-8px);
+  font-size: 12px;
+}
+
+.connexion-form-input:focus-within label {
+  color: #0a2342;
+}
+
+.connexion-form-input::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 2px;
+  background: #0a2342;
+  scale: 0 1;
+  transform-origin: center;
+  transition: scale 0.25s;
+}
+
+.connexion-form-input:focus-within::after {
+  scale: 1;
+}
+
+/* --------------- */
+
+.connexion-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.compte-bouton-blanc,
+.compte-bouton-bleu {
+  text-decoration: none;
+  padding: 10px 16px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    color 0.2s,
+    transform 0.2s;
+}
+
+.compte-bouton-blanc {
+  border: 2px solid #0a2342;
+}
+
+.compte-bouton-bleu {
+  margin-top: 10px;
+}
+
+.compte-bouton-blanc:hover,
+.compte-bouton-bleu:hover {
+  transform: translateY(-2px);
+}
+
+.compte-bouton-blanc:focus-visible {
+  outline: 3px solid #ff6a00;
+  outline-offset: 3px;
+}
+
+.compte-bouton-bleu {
+  background: #0a2342;
+  color: #e9eef5;
+  width: max-content;
+  align-self: center;
+}
+
+.compte-bouton-bleu:hover {
+  background: #153b68;
+}
+
+.compte-bouton-blanc {
+  border-color: #0a2342;
+  background: transparent;
+  color: #0a2342;
+}
+
+.compte-bouton-blanc:hover {
+  background: #ff6a00;
+}
+
+.mes-achats-achats,
+.panier-produit {
+  display: grid;
+  grid-template: repeat(3, auto) / repeat(2, 1fr);
+}
+
+.mes-achats-achats a,
+.panier-produit a {
+  grid-row: 1/4;
+}
+
+.mes-achats-achats img,
+.panier-produit img {
+  width: auto;
+  max-height: 200px;
+}
+
+.mes-achats-commandes + .mes-achats-liste,
+.panier-total + .panier-detail {
+  border-left: 2px solid #0a2342;
+  padding-left: 24px;
+}
+
+.mes-achats-liste :not(a) {
+  padding: 0 10px;
+}
+
+.mes-achats-commandes table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.mes-achats-commandes table th,
+.mes-achats-commandes table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #0a2342;
+}
+
+.mes-achats-commandes table th {
+  background-color: #0a2342;
+  color: #e9eef5;
+  font-weight: 600;
+  border-bottom-width: 2px;
+}
+
+.mes-achats-achats,
+.mes-achats-commandes,
+.panier-total,
+/* .panier-produit, */
+.panier-detail {
+  padding: 20px;
+}
+
+.panier-detail {
+  min-width: 200px;
+}
+
+.categories-liste li {
+  list-style: none;
+}
+.categories-liste a {
+  text-decoration: none;
+  color: unset;
+  color: #0a2342;
+}
+.categories-liste {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+#panier-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: #ff6a00;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  padding: 15px;
+}
+
+/* Tablette (jusqu'à 1024px) */
+@media (max-width: 1024px) {
+  .index-films,
+  .search-resultats,
+  .genre-films,
+  .real-films {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 10px;
+  }
+
+  .header-liens {
+    padding: 0 5%;
+    flex-wrap: wrap;
+  }
+
+  .film-details {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .film-details > h1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    text-align: center;
+  }
+
+  .film-div + .film-div {
+    border: unset;
+    padding: unset;
+    border-top: 2px solid #0a2342;
+    padding-top: 24px;
+  }
+}
+
+/* Mobile (jusqu'à 767px) */
+@media (max-width: 767px) {
+  .index-films,
+  .search-resultats,
+  .genre-films,
+  .real-films {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 10px;
+  }
+
+  .header-liens {
+    flex-wrap: wrap;
+    padding: 0 2%;
+  }
+
+  .mes-achats-section,
+  .panier-section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .mes-achats-commandes + .mes-achats-liste,
+  .panier-total + .panier-detail {
+    border: unset;
+    padding: unset;
+    border-top: 2px solid #0a2342;
+    padding-top: 24px;
+  }
+
+  footer nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer ul {
+    padding: 0 8px;
+    text-align: center;
+  }
+}
+
+/* Petit mobile (jusqu'à 480px) */
+@media (max-width: 480px) {
+  footer nav {
+    grid-template-columns: 1fr;
+  }
+}
